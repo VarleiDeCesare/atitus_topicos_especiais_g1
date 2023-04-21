@@ -15,6 +15,10 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   google_maps_flutter: ^2.2.5
+  retrofit: ^4.0.1
+  dio: ^5.1.1
+  built_value: ^8.4.4
+  json_annotation: ^4.8.0
   google_maps_flutter_web: ^0.4.0+7
   http: ^0.13.5
   json_serializable: ^6.6.1
@@ -29,7 +33,10 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+  retrofit_generator: ^6.0.0+1
   build_runner: ^2.3.3
+  json_serializable: ^6.6.1
+  built_value_generator: ^8.4.4
 
 flutter:
   uses-material-design: true
