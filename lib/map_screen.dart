@@ -27,7 +27,7 @@ class _MapScreenState extends State<MapScreen> {
       _markers.addAll(locations.data.map((location) => Marker(
             markerId: MarkerId('${location.latitude},${location.longitude}'),
             position: LatLng(location.latitude, location.longitude),
-            infoWindow: InfoWindow(title: location.name),
+            infoWindow: InfoWindow(title: location.name, snippet: location.cargo),
           )));
     });
   }
@@ -58,8 +58,8 @@ class _MapScreenState extends State<MapScreen> {
                 _mapController = controller;
               },
               initialCameraPosition: const CameraPosition(
-                target: LatLng(-28.178264982346548, -52.034890573911234),
-                zoom: 12,
+                target: LatLng(-28.17, -51.8),
+                zoom: 11,
               ),
               markers: _markers,
             ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'TextScreen.dart';
-import 'MapScreen.dart';
+import 'text_screen.dart';
+import 'map_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,9 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Meu App',
+        title: 'App desafio flutter',
         theme: ThemeData(
-          primarySwatch: Colors.blue,
+          primarySwatch: Colors.lightGreen,
         ),
         home: MapScreen(),
         routes: {

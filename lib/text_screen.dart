@@ -27,6 +27,7 @@ class _TextScreenState extends State<TextScreen> {
     for (var user in data.data) {
       loadedUsers.add(User(
         name: user.name,
+        cargo: user.cargo,
         email: user.email,
         age: user.age,
         latitude: user.latitude,
@@ -42,15 +43,19 @@ class _TextScreenState extends State<TextScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Lista de Usuários"),
+        title: const Text("Lista de Usuários"),
       ),
       body: ListView.builder(
         itemCount: users.length,
         itemBuilder: (BuildContext context, int index) {
           User user = users[index];
           return ListTile(
-            title: Text(user.name ?? ""),
-            subtitle: Text(user.email ?? ""),
+            title: Text("${user.name} - ${user.cargo}"),
+            subtitle: Text("Email: ${user.email}"),
+            contentPadding: const EdgeInsets.only(left: 10),
+            onTap: () {
+              Navigator.pushNamed(context, '/map');
+            },
           );
         },
       ),

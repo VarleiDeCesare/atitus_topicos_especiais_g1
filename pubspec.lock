@@ -316,10 +316,10 @@ packages:
     dependency: "direct main"
     description:
       name: google_maps_flutter_web
-      sha256: "1bb2ebf3b94488e48c79360870c705c09b7a4f6d9037c7fc3d44587e75adf062"
+      sha256: "33cdd42a83620859f5bd573f9eede550a7401457375b89629d12921751c7bda5"
       url: "https://pub.dev"
     source: hosted
-    version: "0.4.0+7"
+    version: "0.4.0+8"
   graphs:
     dependency: transitive
     description:

@@ -8,6 +8,7 @@ part of 'response_data.dart';
 
 User _$UserFromJson(Map<String, dynamic> json) => User(
       name: json['name'] as String,
+      cargo: json['cargo'] as String,
       latitude: (json['latitude'] as num).toDouble(),
       longitude: (json['longitude'] as num).toDouble(),
       age: (json['age'] as num?)?.toDouble(),
@@ -16,6 +17,7 @@ User _$UserFromJson(Map<String, dynamic> json) => User(
 
 Map<String, dynamic> _$UserToJson(User instance) => <String, dynamic>{
       'name': instance.name,
+      'cargo': instance.cargo,
       'latitude': instance.latitude,
       'longitude': instance.longitude,
       'age': instance.age,

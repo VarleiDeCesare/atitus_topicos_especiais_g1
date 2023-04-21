@@ -5,6 +5,7 @@ part 'response_data.g.dart';
 @JsonSerializable()
 class User {
   String name;
+  String cargo;
   double latitude;
   double longitude;
   final double? age;
@@ -12,6 +13,7 @@ class User {
 
   User({
     required this.name,
+    required this.cargo,
     required this.latitude,
     required this.longitude,
     this.age,

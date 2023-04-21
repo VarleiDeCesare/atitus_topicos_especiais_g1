@@ -13,7 +13,7 @@ class _Api implements Api {
     this._dio, {
     this.baseUrl,
   }) {
-    baseUrl ??= 'https://run.mocky.io/v3/bbe64381-640b-427f-a8f4-309a4c756782';
+    baseUrl ??= 'https://run.mocky.io/v3/adc500c0-4152-41b0-8e73-39b660d4352e';
   }
 
   final Dio _dio;
